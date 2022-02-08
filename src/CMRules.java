@@ -3,7 +3,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.nio.charset.Charset;
 
-public class Ejemplo {
+public class CMRules {
     public static void main(String[] args) throws Exception{
         AlgoCMRules algorithm = new AlgoCMRules();
 
@@ -13,7 +13,7 @@ public class Ejemplo {
     }
 
     private static String fileToPath(String filename) throws UnsupportedEncodingException {
-        URL url = Ejemplo.class.getResource(filename);
+        URL url = CMRules.class.getResource(filename);
         return java.net.URLDecoder.decode(url.getPath(), Charset.defaultCharset());
     }
 }
