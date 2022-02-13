@@ -171,7 +171,7 @@ public class AlgoCMRules {
 		// remove items that are infrequent from the database and 
 		// at the same time calculate the support of each item
 		// as well as the largest item in the dataase
-//		System.out.println("STEP 0");
+		System.out.println("STEP 0");
 		if(maxLeftSize >=1 && maxRightSize >=1){
 			removeItemsThatAreNotFrequent(sequences);
 			
@@ -215,7 +215,7 @@ public class AlgoCMRules {
 		timeEndConvert = System.currentTimeMillis(); 
 		
 		// STEP 2: Applying the APRIORI-TID algorithm to find frequent itemsets
-//		System.out.println("STEP2");
+		System.out.println("STEP2");
 		AlgoAprioriTID_forCMRules apriori = new AlgoAprioriTID_forCMRules(context, matrix);
 		// we don't want itemset having more item that the maximum desired size
 		// for a sequential rules in terms of items
@@ -233,7 +233,7 @@ public class AlgoCMRules {
 		// except that the sequential measures are calculated for each rule
 		// to see if it is a valid sequential rule
 		
-		//System.out.println("STEP3 " + patterns.getItemsetsCount());
+		System.out.println("STEP3 " + patterns.getItemsetsCount());
 		generateRules(patterns);
 		
 		// check memory usage
@@ -464,8 +464,8 @@ public class AlgoCMRules {
 						H1.add(itemsetSize1);
 					}
 				}
-//				lk.print(); // DEBUG
-//				System.out.println(); // DEBUG
+				lk.print(); // DEBUG
+				System.out.println(); // DEBUG
 				
 				/// ================ I ADDED THIS BECAUSE THE ALGORITHM AS DESCRIBED BY AGRAWAL94
 				/// ================ DID NOT GENERATE ALL  THE ASSOCIATION RULES

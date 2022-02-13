@@ -7,7 +7,7 @@ public class CMRules {
     public static void main(String[] args) throws Exception{
         AlgoCMRules algorithm = new AlgoCMRules();
 
-        algorithm.runAlgorithm("/home/daniel/Desktop/TFM/src/data/data.spmf", "/home/daniel/Desktop/TFM/src/data/example", 0.2, 0.8);
+        algorithm.runAlgorithm("/home/daniel/Desktop/TFM/src/data/data2.spmf", "/home/daniel/Desktop/TFM/src/data/example", 0.2, 0.95);
 
         algorithm.printStats();
     }
